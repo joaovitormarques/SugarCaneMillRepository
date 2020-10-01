@@ -19,6 +19,7 @@ public class FieldController {
     @Autowired
     private FieldService fieldService;
 
+    @CrossOrigin
     @GetMapping()
     public ResponseWrapper<List<Field>> getAllFields() {
         return new ResponseWrapper<>(
@@ -26,6 +27,7 @@ public class FieldController {
         );
     }
 
+    @CrossOrigin
     @GetMapping("/{id}")
     public ResponseWrapper<Field> getFieldById(@PathVariable Long id) {
         return new ResponseWrapper<>(
@@ -33,6 +35,7 @@ public class FieldController {
         );
     }
 
+    @CrossOrigin
     @PostMapping()
     public ResponseWrapper<Field> newField(@RequestBody Field newField) throws URISyntaxException {
         Field createdField = fieldService.createField(newField);

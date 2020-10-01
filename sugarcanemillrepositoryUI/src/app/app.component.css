@@ -1,0 +1,25 @@
+mat-card {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.form-field {
+    height: 50px;
+}
+
+.eye-button {
+    margin-left: 10px;
+}
+
+agm-map {
+    height: 300px;
+}
