@@ -33,7 +33,7 @@ import { AgmCoreModule } from '@agm/core';
     HttpClientModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDe6Btz0-JJ3ZKWgEC_fMofWMMqvBF4Vjo'
+      apiKey: '$GOOGLE_MAPS_API_KEY'
     })
   ],
   providers: [],
